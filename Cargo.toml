@@ -15,7 +15,7 @@ strip         = true
 [dependencies]
 chrono             = { version = "0.4", features = ["serde"] }
 clap               = { version = "4.5", features = ["derive"] }
-colored            = "2.2"
+colored            = "3.0"
 rustls             = { version = "0.23", features = ["ring"] }
 tokio              = { version = "1.0", features = ["full"] }
 tracing            = "0.1"
@@ -25,7 +25,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
 
 [dependencies.axum]
 features = ["ws", "http2", "tower-log", "tracing", "multipart", "macros"]
-version  = "0.7"
+version  = "0.8"
 
 [dependencies.tower]
 features = ["limit"]
@@ -43,9 +43,9 @@ features = [
   "typed-routing",
   "async-read-body",
 ]
-version = "0.9"
+version = "0.10"
 
 [build-dependencies]
-build-target  = "0.4"
+build-target  = "0.8"
 git-version   = "0.3"
 rustc_version = "0.4"
